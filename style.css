@@ -64,13 +64,13 @@ body {
     padding: 80px 20px;
     background-color: #ccd1db;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
 }
 
 .hero-content {
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     justify-content: space-between;
     gap: 40px;
     width: 100%;
@@ -86,7 +86,7 @@ body {
 
 
 .hero-text {
-    width: 60%;
+    width: 55%;
 }
 
 .welcome {
@@ -132,7 +132,7 @@ body {
 }
 
 .hero-image {
-    width: 70%;
+    width: 45%;
     text-align: center;
 }
 

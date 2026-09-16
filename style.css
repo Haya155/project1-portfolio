@@ -149,7 +149,7 @@ body {
 */
 .about {
     text-align: center;
-    padding: 70px 20px;
+    padding: 100px 20px;
     background-color: #ffffff;
 }
 
@@ -580,5 +580,22 @@ body {
 @media (min-width: 769px) and (max-width: 1279px) {
     .qualification-card {
         width: 45%;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .qualification-card {
+        width: 45%;
+    }
+
+    .projects-grid,
+    .references-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 }

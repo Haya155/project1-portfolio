@@ -85,16 +85,6 @@ body {
 }
 
 
-.btn-cv {
-    border: 2px solid #2b5c8f !important;
-    color: #2b5c8f !important;
-}
-
-.btn-cv:hover {
-    background-color: #2b5c8f !important;
-    color: #ffffff !important;
-}
-
 .hero-text {
     width: 60%;
 }

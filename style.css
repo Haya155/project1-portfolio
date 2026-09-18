@@ -546,17 +546,26 @@ body {
 
 /* 
    11. Responsive Design 
-   */
-/* 0px - 480px */
+*/
+
+/*(0px - 480px) */
 @media (max-width: 480px) {
     .hero {
         padding: 40px 15px;
+        width: 100%;
+        min-height: auto;
     }
 
     .hero-content {
         flex-direction: column-reverse;
         text-align: center;
         gap: 20px;
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center; 
+        width: 100%;
     }
 
     .hero-text,
@@ -565,7 +574,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .hero h2 {
@@ -573,7 +582,7 @@ body {
     }
 
     .hero-text p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .hero-image img {
@@ -581,8 +590,10 @@ body {
         height: 160px;
     }
 
+    .about-info,
     .projects-grid,
-    .references-grid {
+    .references-grid,
+    .experience-grid {
         grid-template-columns: 1fr;
     }
 
@@ -593,18 +604,29 @@ body {
     .experience-card {
         padding: 18px;
     }
+
+    .about-card {
+        padding: 20px;
+    }
 }
 
+/*(481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     .hero {
         padding: 50px 15px;
         min-height: auto;
+        width: 100%;
     }
 
     .hero-content {
         flex-direction: column-reverse;
         text-align: center;
         gap: 25px;
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 
     .hero-text, 
@@ -626,7 +648,8 @@ body {
     }
 
     .projects-grid,
-    .references-grid {
+    .references-grid,
+    .about-info {
         grid-template-columns: 1fr;
     }
 
@@ -637,16 +660,10 @@ body {
     .experience-card {
         padding: 20px;
     }
-
-     .about-info {
-        grid-template-columns: 1fr;
-    }
 }
 
+/* الشاشات اللوحية والكبيرة نسبياً (769px - 1279px) */
 @media (min-width: 769px) and (max-width: 1279px) {
-    .qualification-card {
-        width: 45%;
-    }
     .hero h1 {
         font-size: 40px;
     }
@@ -662,6 +679,6 @@ body {
 
     .projects-grid,
     .references-grid {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
